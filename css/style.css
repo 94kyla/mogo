@@ -1,0 +1,39 @@
+/*--------------------*/
+
+.wrapper {
+	min-height: 100%;
+	display: grid;
+	grid-template-columns: repeat (1, 1fr);
+	grid-template-rows: 1fr minmax(60px, auto);
+}
+.header {
+	position: fixed;
+	min-width: 100%;
+	min-height: 25px;
+}
+.main {
+	display: grid;
+	background: #fff;
+	grid-row: 1;
+	grid-template-columns: 1fr;
+	grid-template-rows: minmax(1000px,auto) minmax(1000px,auto) minmax(270px,auto) minmax(1000px,auto) minmax(850px,auto) minmax(1000px,auto) minmax(290px,auto) minmax(1000px,auto) minmax(250px,auto) minmax(1000px,auto) minmax(440px,auto) minmax(830px,auto) minmax(780px,auto) minmax(200px,auto) minmax(560px,auto); /* !!! */
+	justify-items: stretch;
+}
+.footer {
+	background-color: #f8f8f8;
+	grid-row: 2;
+}
+.kaushan{
+	font-family: Kaushan Script;
+}
+.montserrat{
+	font-family: Montserrat;
+}
+.roboto{
+	font-family: Roboto;
+}
+.uppercase{
+	text-transform: uppercase;
+}
+@media (max-width:1200px) {
+}

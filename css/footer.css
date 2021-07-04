@@ -1,0 +1,28 @@
+.footer {
+	display: grid;
+	grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
+}
+.footer__body {
+	grid-column: 2;
+	display: grid;
+	grid-template-columns: 1fr;
+	text-align: center;
+}
+.footer__text {
+	grid-column: 1;
+	font-family: Montserrat;
+	font-size: 14px;
+	line-height: 1.2;
+	font-weight: 400;
+	color: #333333;
+}
+.footer__text span{
+	color: #f38181;
+}
+hr.footer__text {
+	border: none;
+	width: 100%;
+	height: 1px;
+	background-color: #e5e5e5;
+	margin: 0px 0px 24px 0px;
+}

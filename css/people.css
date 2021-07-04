@@ -1,0 +1,123 @@
+.people {
+	grid-row: 12;
+	background-color: rgba(255,255,255,0.85);
+	background: url("../img/people_bg.png");
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: cover;
+	justify-items: center;
+	display: grid;
+	grid-template-columns: 1fr minmax(auto,1200px) 1fr;
+}
+.people__body {
+	grid-column: 2;
+	display: grid;
+	margin: 100px 0px 0px 0px;
+	grid-template-rows: 30% 60%;
+}
+.people__up {
+	grid-row: 1;
+}
+.people__up_body {
+	display: grid;justify-items: center;
+}
+.people__up_title {
+	font-size: 24px;
+	line-height: 1.2;
+	font-weight: 400;
+	color: #333333;
+	margin: 0px 0px 16px 0px;
+}
+.people__up_subtitle {
+	font-size: 30px;
+	line-height: 1.2;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #333333;
+	display: grid;
+	justify-items: center;
+	text-align: center;
+}
+hr.people__up_subtitle{
+	border: none;
+	width: 60px;
+	height: 3px;
+	background-color: #f38181;
+	margin: 42px 0px 0px 0px;
+}
+.people__main {
+	grid-row: 2;
+}
+.people__main_body {
+	display: grid;
+	grid-template: 200px 200px / 500px 500px;
+	column-gap: 90px;
+	row-gap: 80px;
+	align-items: center;
+	justify-items: center;
+}
+.people__main_element {
+}
+.main_element_body {
+	display: grid;
+	grid-template-columns: 20% 80%;
+	column-gap: 30px;
+}
+.main_element_left {
+}
+.main_element_left_img {
+}
+.main_element_right {
+}
+.main_element_right_title {
+	font-size: 14px;
+	line-height: 1.2;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #333333;
+}
+.main_element_right_subtitle {
+	font-size: 15px;
+	line-height: 24px;
+	font-weight: 300;
+	font-style: italic;
+	color: #333333;
+}
+hr.main_element_right_subtitle{
+	border: none;
+	width: 60px;
+	height: 3px;
+	background-color: #f38181;
+	margin: 17px 0px 24px 0px;
+}
+.main_element_right_text {
+	font-size: 15px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #999999;
+}
+@media (max-width:1200px) {
+	.people {
+		grid-row: 12;
+		background-color: rgba(255,255,255,0.85);
+		background: url("../img/people_bg.png");
+		background-repeat: no-repeat;
+		background-position: 50%;
+		background-size: cover;
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.people__body {
+		grid-column: 1;
+		display: grid;
+		margin: 100px 0px 0px 0px;
+		grid-template-rows: 20% 60%;
+	}
+	.people__main_body {
+		display: grid;
+		grid-template: 200px 200px/500px 500px;
+		column-gap: 90px;
+		row-gap: 80px;
+		align-items: center;
+	}
+}

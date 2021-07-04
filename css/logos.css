@@ -1,0 +1,34 @@
+.logos {
+	grid-row: 9;
+	display: grid;
+	grid-template-columns: 1fr minmax(auto,1200px) 1fr;
+	background-color: #f8f8f8;
+}
+
+.logos__body {
+	grid-column: 2;
+	display: grid;
+	grid-template: 1fr / 1fr;
+	justify-items: center;
+}
+.logos__main_imgList {
+	grid-row: 1;
+	grid-column: 1;
+	display: grid;
+	grid-template-columns: repeat(6,150px);
+	grid-template-rows: 1fr 150px 1fr;
+	column-gap: 50px;
+}
+.logos__main_imgelement {
+	position: relative;
+	grid-row: 2;
+	display: grid;
+}
+.logos__main_imgelement img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}

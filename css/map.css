@@ -1,0 +1,38 @@
+.map {
+	grid-row: 14;
+	background: url("../img/mab_bg.png");
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: cover;
+	display: grid;
+	grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
+}
+.map__body {
+	grid-column: 2;
+	display: grid;
+	justify-items: center;
+	text-align: center;
+	margin: 50px 0px 57px 0px;
+}
+.map__up {
+}
+.map__up_img {
+}
+.map__middle {
+	font-size: 24px;
+	line-height: 1.2;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #f38181;
+	display: grid;
+	justify-items: center;
+	text-align: center;
+	margin: 18px 0px 0px 0px;
+}
+hr.map__middle {
+	border: none;
+	width: 60px;
+	height: 3px;
+	background-color: #f38181;
+	margin: 21px 0px 0px 0px;
+}
